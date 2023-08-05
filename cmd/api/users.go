@@ -110,7 +110,6 @@ func (app *application) activateUserHandler(w http.ResponseWriter, r *http.Reque
 	}
 
 	user.Activated = true
-	err = app.models.Users.Update(user)
 
 	err = app.models.Users.Update(user)
 	if err != nil {
